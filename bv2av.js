@@ -7,6 +7,7 @@
 // @match           https://www.bilibili.com/video/BV*
 // @version         0.0.1
 // @grant           none
+// @license         MIT License
 // ==/UserScript==
 (function () {
     'use strict';
