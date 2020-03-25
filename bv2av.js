@@ -4,10 +4,15 @@
 // @namespace       [url=mailto:zzy0302@vip.qq.com]zzy0302@vip.qq.com[/url]
 // @author          zzy0302
 // @description     av还原助手,还原所有bv至av
-// @match           *://*.bilibili.com/video/*
-// @version         0.0.2
+// @match           *://*.bilibili.com/video*
+// @version         0.0.3
 // @grant           none
 // @license         MIT License
+// @homepage        https://github.com/zzy0302/bv2av/tree/master/
+// @homepageURL     https://github.com/zzy0302/bv2av/tree/master/
+// @downloadURL     https://github.com/zzy0302/bv2av/tree/master/bv2av.js
+// @updateURL       https://github.com/zzy0302/bv2av/tree/master/bv2av.js
+// @supportURL      https://github.com/zzy0302/bv2av/issues
 // ==/UserScript==
 (function () {
     'use strict';
@@ -41,5 +46,5 @@
                 o.title = bv2av(o.title);
             }
         }
-    }, 500);
+    }, 1000);
 })();
