@@ -5,7 +5,7 @@
 // @author          zzy0302
 // @description     av还原助手,还原所有bv至av
 // @match           *://*.bilibili.com/video*
-// @version         0.0.3
+// @version         0.0.4
 // @grant           none
 // @license         MIT License
 // @homepage        https://github.com/zzy0302/bv2av/tree/master/
@@ -14,6 +14,8 @@
 // @updateURL       https://github.com/zzy0302/bv2av/tree/master/bv2av.js
 // @supportURL      https://github.com/zzy0302/bv2av/issues
 // ==/UserScript==
+
+// some code from https://greasyfork.org/en/scripts/398535-bv2av/code
 (function () {
     'use strict';
     let elem = document.querySelector('#video-page-app');
@@ -32,19 +34,4 @@
     if (url != newUrl) {
         window.history.pushState(null, null, newUrl);
     }
-
-    setInterval(function () {
-        var nodes = document.querySelectorAll('a');
-        for (var o of nodes) {
-            if (o.href) {
-                o.href = bv2av(o.href);
-            }
-        }
-        nodes = document.querySelectorAll('div');
-        for (o of nodes) {
-            if (o.title) {
-                o.title = bv2av(o.title);
-            }
-        }
-    }, 1000);
 })();

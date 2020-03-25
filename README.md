@@ -5,6 +5,8 @@
 - 油猴：[av还原助手](https://greasyfork.org/en/scripts/398640)
 
 #### 更新日志
+- v0.0.4
+  修复了一个引起链接错误的bug 参考了另一个[脚本](https://greasyfork.org/en/scripts/398535-bv2av/code)
 - v0.0.3
   更广的适用范围
   新增自动更新
